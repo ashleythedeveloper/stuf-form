@@ -120,3 +120,133 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* JSON Forms and Material-UI styling fixes */
+.jsonforms-container .MuiFormControl-root {
+  margin-bottom: 16px;
+}
+
+.jsonforms-container .MuiFormGroup-root {
+  margin-bottom: 16px;
+}
+
+.jsonforms-container .MuiInputLabel-root {
+  color: #374151;
+  font-weight: 500;
+}
+
+.jsonforms-container .MuiOutlinedInput-root {
+  background-color: white;
+}
+
+.jsonforms-container .MuiFormHelperText-root {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.jsonforms-container .MuiTypography-h6 {
+  color: #1f2937;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Group styling for better visual separation */
+.jsonforms-container .MuiAccordion-root {
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.jsonforms-container .MuiAccordionSummary-content {
+  margin: 12px 0;
+}
+
+.jsonforms-container .MuiAccordionDetails-root {
+  padding: 16px;
+}
+
+/* RJSF Core styling improvements */
+.rjsf-form .form-group {
+  margin-bottom: 20px;
+}
+
+.rjsf-form label {
+  display: block;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.rjsf-form input,
+.rjsf-form select,
+.rjsf-form textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: white;
+  transition: border-color 0.2s;
+}
+
+.rjsf-form input:focus,
+.rjsf-form select:focus,
+.rjsf-form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px #2563eb;
+}
+
+.rjsf-form input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+.rjsf-form .help-block {
+  color: #6b7280;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.rjsf-form .text-danger {
+  color: #dc2626;
+}
+
+.rjsf-form fieldset {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.rjsf-form fieldset legend {
+  font-weight: 600;
+  color: #1f2937;
+  padding: 0 8px;
+}
+
+.rjsf-form .btn-info {
+  display: none; /* Hide default submit button as we have custom ones */
+}
+
+.rjsf-form .has-error input,
+.rjsf-form .has-error select,
+.rjsf-form .has-error textarea {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 1px #dc2626;
+}
+
+.rjsf-form .has-error label {
+  color: #dc2626;
+}
+
+.rjsf-form .text-danger,
+.rjsf-form .help-block.text-danger {
+  color: #dc2626;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.rjsf-form fieldset.has-error {
+  border-color: #dc2626;
+}
